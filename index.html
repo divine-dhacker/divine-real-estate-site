@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NavBar -->
+
+    <nav>
+        <div class="flex">
+            <h2>Logo</h2>
+            <button class="hamburger" aria-label="Open menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="#service" class="nav-item">Services</a></li>
+            <li><a href="#properties" class="nav-item">Properties</a></li>
+            <li><a href="#why-us" class="nav-item">Why Us</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+
+    <!-- NavBar close -->
+
+
+
+    <!-- Header -->
+
+    <header id="home">
+        <video autoplay muted loop style="object-fit: cover; width: 100%; height: 100%;">
+            <source src="./assets/real-estate-bg.mp4">
+        </video>
+        <div class="overlay">
+            <h1>Discover your dream Home</h1>
+            <p>Luxury, Comfort affordability combined.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Header close -->
+
+
+    <!-- Service  -->
+
+    <section class="service" id="service">
+
+        <div class="title">
+            <h2>Our Services</h2>
+            <p>We provide premium real estate services tailored to your unique needs.</p>
+        </div>
+
+        <div class="container flex">
+            <ul class="flex">
+
+                <li>
+                    <div class="image-cover">
+                        <img src="./assets/Service/img-1.jpg" alt="Real Estate Opportunities">
+                    </div>
+                    <p>Securing opportunities in real estate with trust, collaboration, and unmatched dedication,
+                        guiding you every step of the way to your dream property.</p>
+                </li>
+
+                <li>
+                    <div class="image-cover">
+                        <img src="./assets/Service/img-2.avif" alt="Property Consultation">
+                    </div>
+                    <p>Providing expert property consultation, helping you make informed decisions that align with your
+                        goals and preferences.</p>
+                </li>
+
+                <li>
+                    <div class="image-cover">
+                        <img src="./assets/Service/img-3.jpg" alt="Property Solutions">
+                    </div>
+                    <p>Empowering your property journey with honesty, innovation, and proven expertise, offering
+                        personalized solutions that suit your unique needs.</p>
+                </li>
+
+                <li>
+                    <div class="image-cover">
+                        <img src="./assets/Service/img-4.jpg" alt="Finding Your Dream Home">
+                    </div>
+                    <p>Turning property dreams into reality through seamless service, reliable expertise, and a
+                        commitment to finding the perfect home for you.</p>
+                </li>
+
+                <li>
+                    <div class="image-cover">
+                        <img src="./assets/Service/img-5.avif" alt="Investment Opportunities">
+                    </div>
+                    <p>Discover homes and investments where trust meets integrity and collaboration, your trusted
+                        partner in real estate, making every transaction secure and seamless.</p>
+                </li>
+
+                <li>
+                    <div class="image-cover">
+                        <img src="./assets/Service/img-6.jpg" alt="Client Satisfaction">
+                    </div>
+                    <p>Building trust, creating opportunities, and delivering excellence in real estate, ensuring your
+                        journey is smooth, rewarding, and memorable.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Service close -->
+    <!-- Properties -->
+
+    <section class="properties" id="properties">
+        <div class="property-item active" onclick="nextProperty(this)">
+            <img src="./assets/img-1.jpg" alt="Property 1">
+            <div class="description">
+                <h2>Luxury Apartment in Downtown</h2>
+                <p>Experience unparalleled comfort and style in this premium property.</p>
+                <p class="hint">Click the image to explore more.</p>
+            </div>
+
+        </div>
+        <div class="property-item" onclick="nextProperty(this)">
+            <img src="./assets/img-3.jpg" alt="Property 3">
+            <div class="description">
+                <h2>Modern Family Villa</h2>
+                <p>A perfect blend of spacious living and modern design, ideal for your family.</p>
+                <p class="hint">Click the image to explore more.</p>
+            </div>
+
+        </div>
+        <div class="property-item" onclick="nextProperty(this)">
+            <img src="./assets/Img-2.jpg" alt="Property 2">
+            <div class="description">
+                <h2>Cozy Countryside Cottage</h2>
+                <p>Escape to serenity with this charming home surrounded by nature.</p>
+                <p class="hint">Click the image to explore more.</p>
+            </div>
+
+        </div>
+        <div class="property-item" onclick="nextProperty(this)">
+            <img src="./assets/img-4.jpg" alt="Property 3">
+            <div class="description">
+                <h2>Stunning Beachfront Property</h2>
+                <p>Wake up to breathtaking ocean views in this luxurious retreat.</p>
+                <p class="hint">Click the image to explore more.</p>
+            </div>
+
+        </div>
+        <div class="property-item" onclick="nextProperty(this)">
+            <img src="./assets/Img-5.jpg" alt="Property 3">
+            <div class="description">
+                <h2>Contemporary Urban Loft</h2>
+                <p>Sleek, stylish, and situated in the heart of the city.</p>
+                <p class="hint">Click the image to explore more.</p>
+            </div>
+
+        </div>
+        <div class="property-item" onclick="nextProperty(this)">
+            <img src="./assets/img-6.jpg" alt="Property 3">
+            <div class="description">
+                <h2>Elegant Mountain Chalet</h2>
+                <p>Enjoy panoramic views and cozy interiors in this alpine getaway.</p>
+                <p class="hint">Click the image to explore more.</p>
+            </div>
+
+        </div>
+        <!-- More images and descriptions as needed -->
+    </section>
+
+
+    <!-- Properties close -->
+
+
+    <!-- Why Us -->
+
+    <section id="why-us" class="why-us" id="why-us">
+        <div class="container">
+            <div class="title">
+                <h2>Why Choose Us</h2>
+                <p>Discover why thousands trust us for their real estate needs</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <img src="./assets/Why Us Images/agreement.png" alt="Trusted Expertise">
+                    <h3>Trusted Expertise</h3>
+                    <p>Decades of experience delivering exceptional results in real estate.</p>
+                </div>
+                <div class="feature">
+                    <img src="./assets/Why Us Images/house.png" alt="Tailored Solutions">
+                    <h3>Tailored Solutions</h3>
+                    <p>Personalized services to meet your unique property needs.</p>
+                </div>
+                <div class="feature">
+                    <img src="./assets/Why Us Images/rental.png" alt="Transparent Process">
+                    <h3>Transparent Process</h3>
+                    <p>Honesty and clarity at every step of your property journey.</p>
+                </div>
+                <div class="feature">
+                    <img src="./assets/Why Us Images/house.png" alt="24/7 Support">
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated assistance whenever you need us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why Us close -->
+
+
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>We'd love to hear from you! Fill out the form or reach out directly:</p>
+                <div class="contact-details">
+                    <div class="detail">
+                        <strong>Address:</strong>
+                        <p>Isiohor, Benin City, Edo State, Nigeria</p>
+                    </div>
+                    <div class="detail">
+                        <strong>Email:</strong>
+                        <p>nosakharedivine307@gmail.com</p>
+                    </div>
+                    <div class="detail">
+                        <strong>Phone:</strong>
+                        <p>+234 706 497 5790</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form action="#">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Close -->
+
+
+
+
+    <script>
+        let currentIndex = 0;
+        const items = document.querySelectorAll('.property-item');
+
+        function nextProperty(current) {
+            // Remove the 'active' class from the current image
+            items[currentIndex].classList.remove('active');
+
+            // Set the 'active' class to the next image
+            currentIndex = (currentIndex + 1) % items.length; // Loop back to the first image
+            items[currentIndex].classList.add('active');
+
+            // Set the 'next' class to the next image after the active one
+            const nextIndex = (currentIndex + 1) % items.length;
+            items[nextIndex].classList.add('next');
+
+            // Ensure the next image is reset to normal once it's transitioned in
+            setTimeout(() => {
+                items[nextIndex].classList.remove('next');
+            }, 700); // This duration should match the transition time
+        }
+
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
