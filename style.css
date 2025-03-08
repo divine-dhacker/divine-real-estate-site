@@ -660,3 +660,66 @@ header .btn:hover {
         background-color: #333;
     }
 }
+
+/* 🟢 Smooth Page Fade-in Effect */
+body {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* 🟢 Buttons - Interactive Hover Animation */
+button {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🟢 Scroll Animation (Revealing Content) */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🟢 Cards - Hover Lift Effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* 🟢 Typing Cursor Effect */
+#typing-text::after {
+    content: "|";
+    animation: blink 0.6s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* 🟢 Smooth Image Hover Zoom */
+img {
+    transition: transform 0.4s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+        
